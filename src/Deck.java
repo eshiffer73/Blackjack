@@ -1,10 +1,11 @@
 import java.util.ArrayList;
 import java.util.List;
 
-
+// This class represents a deck of cards
 public class Deck {
     private final List<Card> cards = new ArrayList<>();
 
+    // Creates a deck of 52 cards
     public Deck() {
         for (Suit suit : Suit.values()) {
             for (Rank rank : Rank.values()) {
@@ -13,10 +14,7 @@ public class Deck {
         }
     }
 
-    public List<Card> getCards() {
-        return cards;
-    }
-
+    // Deals a card from the deck
     public Card dealCard() {
         if (cards.isEmpty()) {
             return null;
@@ -24,6 +22,7 @@ public class Deck {
         return cards.remove(0);
     }
 
+    // Shuffles the deck
     public void shuffleDeck() {
         for (int i = 0; i < 1000; i++) {
             int first = (int) (Math.random() * 52);

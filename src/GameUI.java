@@ -12,8 +12,8 @@ public class GameUI {
     private JButton hitButton, stayButton, splitButton, doubleDownButton, betButton, newRoundButton;
     private JTextField betInput;
 
-    private Player player = new Player("Player", false);
-    private Player dealer = new Player("Dealer", true);
+    private Player player = new Player("Player");
+    private Player dealer = new Player("Dealer");
     private Deck deck;
     private int bet;
     private int currentHandIndex = 0;

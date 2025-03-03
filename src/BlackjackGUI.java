@@ -28,8 +28,8 @@ public class BlackjackGUI extends Application {
         game = new GameJavaFX(); // Use existing game logic
         deck = new Deck();
         deck.shuffleDeck();
-        player = new Player("Player", false);
-        dealer = new Player("Dealer", true);
+        player = new Player("Player");
+        dealer = new Player("Dealer");
         game.startRound(player, dealer, deck);
 
         playerCardViews = new ArrayList<>();
